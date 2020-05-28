@@ -1,8 +1,6 @@
 ---
 - name: run show version on remote devices
   hosts: all
-  roles:
-    - Juniper.junos
   connection: local
   gather_facts: no
 
