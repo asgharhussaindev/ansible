@@ -1,12 +1,12 @@
 ---
 - name: run show version on remote devices
   hosts: all
+  roles:
+    - Juniper.junos
   connection: local
   gather_facts: no
 
   tasks:
-
     - name: JunOS show version
       junos_command:
         commands: show version
-      register: response
