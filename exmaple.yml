@@ -7,3 +7,4 @@
     - name: JunOS show version
       junos_command:
         commands: show version
+      register: response
