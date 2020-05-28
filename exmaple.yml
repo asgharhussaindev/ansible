@@ -1,3 +1,9 @@
-- name: run show interfaces terse on juniper devices
-  junos_command:
-    commands: show interfaces terse
+---
+- name: run show version on remote devices
+  hosts: all
+
+  tasks:
+
+  - name: JunOS show version
+    junos_command:
+    commands: show version
