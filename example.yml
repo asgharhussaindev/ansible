@@ -1,6 +1,8 @@
 ---
 - name: run show version on remote devices
   hosts: all
+  connection: local
+  gather_facts: no
 
   tasks:
 
